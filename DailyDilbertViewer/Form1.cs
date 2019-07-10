@@ -95,6 +95,31 @@ namespace DailyDilbertViewer
             this.Size = newsize;
             
         }
-        
+
+        private bool menu_visible = false;
+        private void pictureBox_dilbertComic_Click(object sender, EventArgs e)
+        {
+            bool state;
+            if (menu_visible)
+            {
+                state = false;
+                button_date_back.Visible = state;
+                button_date_forward.Visible = state;
+                listBox_Dates.Visible = state;
+                listBox_tags.Visible = state;
+                pictureBox_dilbertComic.Location = new Point(0,0);
+                menu_visible = false;
+            }
+            else
+            {
+                state = true;
+                button_date_back.Visible = state;
+                button_date_forward.Visible = state;
+                listBox_Dates.Visible = state;
+                listBox_tags.Visible = state;
+                pictureBox_dilbertComic.Location = new Point(285, 41);
+                menu_visible = true;
+            }
+        }
     }
 }

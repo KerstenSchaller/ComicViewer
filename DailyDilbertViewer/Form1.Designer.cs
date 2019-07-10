@@ -38,12 +38,13 @@
             // 
             // pictureBox_dilbertComic
             // 
-            this.pictureBox_dilbertComic.Location = new System.Drawing.Point(285, 41);
+            this.pictureBox_dilbertComic.Location = new System.Drawing.Point(0, 0);
             this.pictureBox_dilbertComic.Name = "pictureBox_dilbertComic";
             this.pictureBox_dilbertComic.Size = new System.Drawing.Size(484, 329);
             this.pictureBox_dilbertComic.TabIndex = 0;
             this.pictureBox_dilbertComic.TabStop = false;
             this.pictureBox_dilbertComic.SizeChanged += new System.EventHandler(this.pictureBox_dilbertComic_SizeChanged);
+            this.pictureBox_dilbertComic.Click += new System.EventHandler(this.pictureBox_dilbertComic_Click);
             // 
             // button_date_back
             // 
@@ -53,6 +54,7 @@
             this.button_date_back.TabIndex = 1;
             this.button_date_back.Text = "- 1 Day";
             this.button_date_back.UseVisualStyleBackColor = true;
+            this.button_date_back.Visible = false;
             this.button_date_back.Click += new System.EventHandler(this.button_date_back_Click);
             // 
             // button_date_forward
@@ -63,6 +65,7 @@
             this.button_date_forward.TabIndex = 2;
             this.button_date_forward.Text = "+ 1 day";
             this.button_date_forward.UseVisualStyleBackColor = true;
+            this.button_date_forward.Visible = false;
             this.button_date_forward.Click += new System.EventHandler(this.button_date_forward_Click);
             // 
             // listBox_Dates
@@ -72,6 +75,7 @@
             this.listBox_Dates.Name = "listBox_Dates";
             this.listBox_Dates.Size = new System.Drawing.Size(129, 329);
             this.listBox_Dates.TabIndex = 3;
+            this.listBox_Dates.Visible = false;
             this.listBox_Dates.SelectedIndexChanged += new System.EventHandler(this.listBox_Dates_SelectedIndexChanged);
             // 
             // listBox_tags
@@ -82,12 +86,14 @@
             this.listBox_tags.SelectionMode = System.Windows.Forms.SelectionMode.MultiSimple;
             this.listBox_tags.Size = new System.Drawing.Size(129, 329);
             this.listBox_tags.TabIndex = 4;
+            this.listBox_tags.Visible = false;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
+            this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.ClientSize = new System.Drawing.Size(1050, 460);
             this.Controls.Add(this.listBox_tags);
             this.Controls.Add(this.listBox_Dates);
