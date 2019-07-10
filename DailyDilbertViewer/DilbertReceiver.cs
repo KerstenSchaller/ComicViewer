@@ -40,30 +40,40 @@ namespace DailyDilbertViewer
 
         public Image getDilbertComicImageByDate(DateTime date)
         {
+            Image image;
             var d = date.Date;
-            if (date.Date.CompareTo( DateTime.Now.Date) > 0)
+            if (date.Date.CompareTo(DateTime.Now.Date) > 0)
             {
-                Bitmap error_bmp = new Bitmap(DailyDilbertViewer.Properties.Resources.ErrorResponse);
-                return (Image)error_bmp;
+                image = (Image)new Bitmap(DailyDilbertViewer.Properties.Resources.ErrorResponse);
             }
-            /*Check if image exists already and load it if true*/
-            Image image = filehandler.LoadImage(date);
-            if (image == null)
-            {
-                string url = getDilbertComícUrlByDate(date);
-                image = GetImageFromURL(url);
-                filehandler.SaveImage(date, image);
+            else
+            { 
+                /*Check if image exists already and load it if true*/
+                image = filehandler.LoadImage(date);
+                if (image == null)
+                {
+                    string url = getDilbertComícUrlByDate(date);
+                    image = GetImageFromURL(url);
+                    filehandler.SaveImage(date, image);
+                }
             }
-            
+            setPictureBox(image);
+
+            return image;
+
+        }
+
+        public bool setPictureBox(Image image)
+        {
             if (Picturebox != null)
             {
                 Picturebox.Image = image;
                 Size comicsize = new Size(image.Width, image.Height);
                 Picturebox.Size = comicsize;
                 Picturebox.Update();
+                return true;
             }
-            return image;
-
+            return false;
         }
 
         public string getDilbertComícUrlByDate(DateTime date)
@@ -77,7 +87,7 @@ namespace DailyDilbertViewer
             adress += (date.Day < 10) ? "0" : "";// prepend 0 if needed
             adress += date.Day;
             this.getHtml(adress);
-            //var t = getTags();
+           // var t = getTags();
             return  this.getImageUrl();
         }
 
