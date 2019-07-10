@@ -101,7 +101,7 @@
             this.Controls.Add(this.button_date_back);
             this.Controls.Add(this.pictureBox_dilbertComic);
             this.Name = "Form1";
-            this.Text = "Daily Dilbert";
+            this.Text = "Comic Viewer";
             this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_dilbertComic)).EndInit();
             this.ResumeLayout(false);

@@ -16,6 +16,7 @@ namespace DailyDilbertViewer
         Dictionary<DateTime, string> fileDictionary = new Dictionary<DateTime, string>();
         System.Windows.Forms.ListBox Listbox_days = null;
         System.Windows.Forms.ListBox Listbox_tags = null;
+        
 
         public ImageFileHandler()
         {

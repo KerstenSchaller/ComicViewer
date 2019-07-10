@@ -41,8 +41,8 @@ namespace DailyDilbertViewer
 
         protected override bool ProcessCmdKey(ref Message msg, Keys keyData)
         {
-            if (keyData == Keys.Up)  minusOneDay();
-            if (keyData == Keys.Down) plusOneDay();
+            if (keyData == Keys.Left)  minusOneDay();
+            if (keyData == Keys.Right) plusOneDay();
             return true;
         }
 
@@ -92,6 +92,7 @@ namespace DailyDilbertViewer
             Size newsize = oldsize;
             newsize.Height = this.pictureBox_dilbertComic.Size.Height;
             this.listBox_Dates.Size = newsize;
+            this.listBox_tags.Size = newsize;
             this.Size = newsize;
             
         }

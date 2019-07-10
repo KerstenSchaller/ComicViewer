@@ -21,6 +21,7 @@ namespace DailyDilbertViewer
         string ImageUrl = "";
         public ImageFileHandler filehandler;
         System.Windows.Forms.PictureBox Picturebox;
+        List<string> all_tags = new List<string>();
 
         public DilbertReceiver()
         {
@@ -87,7 +88,7 @@ namespace DailyDilbertViewer
             adress += (date.Day < 10) ? "0" : "";// prepend 0 if needed
             adress += date.Day;
             this.getHtml(adress);
-           // var t = getTags();
+            var t = getTags();
             return  this.getImageUrl();
         }
 
@@ -140,18 +141,22 @@ namespace DailyDilbertViewer
         }
 
 
-        public string[] getTags()
+        public List<string> getTags()
         {
-            string TagStartstring = "<meta property=\"article: tag\" content=\"";
 
+            //data-tags=\"comic strip,inventions,sarcasm,technology,creativity\" data-descri
+            string TagStartstring = "data-tags";
+            string TagEndstring = @"""";
             int startIndex = httpContent.IndexOf(TagStartstring);
-            int endindex = httpContent.IndexOf("\"/>", startIndex);
 
-            int startindexTags = startIndex;
+
+            int startindexTags = startIndex + TagStartstring.Length + 2;
+            int endindex = httpContent.IndexOf(TagEndstring, startindexTags);
             int endindexTags = endindex;
-            int length = endindexTags - startIndex;
+            int length = endindexTags - startindexTags;
             string tags = httpContent.Substring(startindexTags, length);
-            return tags.Split(',');
+            all_tags = tags.Split(',').ToList();
+            return all_tags;
         }
 
 
