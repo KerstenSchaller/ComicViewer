@@ -16,7 +16,7 @@ namespace DailyDilbertViewer
         Dictionary<DateTime, string> fileDictionary = new Dictionary<DateTime, string>();
         System.Windows.Forms.ListBox Listbox_days = null;
         System.Windows.Forms.ListBox Listbox_tags = null;
-        
+        string directoryName = "Dilbert_Comics";
 
         public ImageFileHandler()
         {
@@ -36,8 +36,8 @@ namespace DailyDilbertViewer
             {
                 string path = getFilepath(date);
                 image.Save(path);
-                fileDictionary.Add(date, path);
-                this.parseAllFiles();
+                fileDictionary.Add(date.Date, path);
+                this.Listbox_days.DataSource = this.getAllFiles();
 
             }
 
@@ -45,8 +45,10 @@ namespace DailyDilbertViewer
 
         private string getFilepath(DateTime date)
         {
+            
+            Directory.CreateDirectory(this.directoryName);
             string filename = "Dilbert_" + date.Date.ToShortDateString().Replace('.', '_');
-            string path = Path.Combine(Directory.GetCurrentDirectory(), filename + ".jpeg");
+            string path = Path.Combine(Directory.GetCurrentDirectory(), directoryName, filename + ".jpeg");
             return path;
         }
 
@@ -71,33 +73,34 @@ namespace DailyDilbertViewer
             retlist.Sort();
             return retlist;
         }
-
-        public List<DateTime> parseAllFiles()
+        
+        public void parseAllFiles()
         {
+
             fileDictionary = new Dictionary<DateTime, string>();
-            string path = Directory.GetCurrentDirectory();
+            string path = Path.Combine(Directory.GetCurrentDirectory(),this.directoryName);
+            if (!Directory.Exists(path)) return;
             string[] files = Directory.GetFiles(path);
-            List<DateTime> retlist = new List<DateTime>();
             foreach (string file in files)
             {
+                string filename = Path.GetFileNameWithoutExtension(file);
                 string ext = Path.GetExtension(file);
                 if (ext == ".jpeg")
                 {
-                    string[] dateArray = file.Split('_');
-                    dateArray[3] = dateArray[3].Substring(0, 4);
+                    string[] dateArray = filename.Split('_');
                     DateTime date = new DateTime(Int32.Parse(dateArray[3]), Int32.Parse(dateArray[2]), Int32.Parse(dateArray[1]));
-                    retlist.Add(date);
+                    
                     fileDictionary.Add(date, file);
                 }
             }
-            retlist.Sort();
+          
             if (Listbox_days != null)
             {
-                Listbox_days.DataSource = retlist;
+                Listbox_days.DataSource = this.getAllFiles();
                 Listbox_days.Update();
             }
             
-            return retlist;
+            
         }
 
     }
