@@ -122,5 +122,10 @@ namespace DailyDilbertViewer
                 menu_visible = true;
             }
         }
+
+        private void listBox_tags_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

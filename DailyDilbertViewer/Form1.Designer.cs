@@ -87,6 +87,7 @@
             this.listBox_tags.Size = new System.Drawing.Size(129, 329);
             this.listBox_tags.TabIndex = 4;
             this.listBox_tags.Visible = false;
+            this.listBox_tags.SelectedIndexChanged += new System.EventHandler(this.listBox_tags_SelectedIndexChanged);
             // 
             // Form1
             // 

@@ -20,6 +20,7 @@ namespace DailyDilbertViewer
         string httpContent ="";
         string ImageUrl = "";
         public ImageFileHandler filehandler;
+        public MetaFileHandler metaFileHandler;
         System.Windows.Forms.PictureBox Picturebox;
         List<string> all_tags = new List<string>();
 
@@ -31,6 +32,7 @@ namespace DailyDilbertViewer
         {
             Picturebox = picturebox;
             filehandler = new ImageFileHandler(listbox_dates,listbox_tags);
+            metaFileHandler = new MetaFileHandler(listbox_tags);
         }
 
 
@@ -77,7 +79,7 @@ namespace DailyDilbertViewer
             return false;
         }
 
-        public string getDilbertComícUrlByDate(DateTime date)
+        private string getDilbertComícUrlByDate(DateTime date)
         {
             string adress = "https://dilbert.com/strip/";
             adress += date.Year;
@@ -89,6 +91,7 @@ namespace DailyDilbertViewer
             adress += date.Day;
             this.getHtml(adress);
             var t = getTags();
+            metaFileHandler.addTagsForDate(date,t);
             return  this.getImageUrl();
         }
 
