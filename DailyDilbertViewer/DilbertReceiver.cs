@@ -1,39 +1,31 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-
-using System.Net.Http;
 using System.Net;
 using System.IO;
-
 using System.Net.Security;
 using System.Security.Cryptography.X509Certificates;
 using System.Drawing;
 
 namespace DailyDilbertViewer
 {
-    class DilbertReceiver : WebClient
+    public class DilbertReceiver : WebClient
     {
         string httpContent ="";
         string ImageUrl = "";
-        public ImageFileHandler filehandler;
-        public MetaFileHandler metaFileHandler;
-        System.Windows.Forms.PictureBox Picturebox;
+        ImageFileHandler filehandler;
+        MetaFileHandler metaFileHandler;
         List<string> all_tags = new List<string>();
 
         public DilbertReceiver()
         {
         }
 
-        public DilbertReceiver(System.Windows.Forms.PictureBox picturebox, System.Windows.Forms.ListBox listbox_dates, System.Windows.Forms.ListBox listbox_tags)
-        {
-            Picturebox = picturebox;
-            filehandler = new ImageFileHandler(listbox_dates,listbox_tags);
-            metaFileHandler = new MetaFileHandler(listbox_tags);
-        }
+        //public DilbertReceiver()
+        //{
+        //    filehandler = new ImageFileHandler();
+        //    metaFileHandler = new MetaFileHandler();
+        //}
 
 
         public bool AcceptAllCertifications(object sender, System.Security.Cryptography.X509Certificates.X509Certificate certification, System.Security.Cryptography.X509Certificates.X509Chain chain, System.Net.Security.SslPolicyErrors sslPolicyErrors)
@@ -47,7 +39,7 @@ namespace DailyDilbertViewer
             var d = date.Date;
             if (date.Date.CompareTo(DateTime.Now.Date) > 0)
             {
-                image = (Image)new Bitmap(DailyDilbertViewer.Properties.Resources.ErrorResponse);
+                image = (Image)new Bitmap("error.jpg");
             }
             else
             { 
@@ -60,25 +52,12 @@ namespace DailyDilbertViewer
                     filehandler.SaveImage(date, image);
                 }
             }
-            setPictureBox(image);
 
             return image;
 
         }
 
-        public bool setPictureBox(Image image)
-        {
-            if (Picturebox != null)
-            {
-                Picturebox.Image = image;
-                Size comicsize = new Size(image.Width, image.Height);
-                Picturebox.Size = comicsize;
-                Picturebox.Update();
-                return true;
-            }
-            return false;
-        }
-
+       
         private string getDilbertComícUrlByDate(DateTime date)
         {
             string adress = "https://dilbert.com/strip/";

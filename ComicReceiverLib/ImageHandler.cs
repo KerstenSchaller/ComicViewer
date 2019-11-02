@@ -21,8 +21,7 @@ namespace DailyDilbertViewer
             this.parseAllFiles();
         }
 
-
-        
+      
 
         public void SaveImage(DateTime date, Image image)
         {
@@ -31,7 +30,6 @@ namespace DailyDilbertViewer
                 string path = getFilepath(date);
                 image.Save(path);
                 fileDictionary.Add(date.Date, path);
-
             }
 
         }
@@ -86,10 +84,6 @@ namespace DailyDilbertViewer
                     fileDictionary.Add(date, file);
                 }
             }
-          
-         
-            
-            
         }
 
     }

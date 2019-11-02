@@ -1,0 +1,4 @@
+C:\Users\kerst\Desktop\git repos\ComicViewer\ComicReceiverLib\bin\Debug\ComicReceiverLib.dll
+C:\Users\kerst\Desktop\git repos\ComicViewer\ComicReceiverLib\bin\Debug\ComicReceiverLib.pdb
+C:\Users\kerst\Desktop\git repos\ComicViewer\ComicReceiverLib\obj\Debug\ComicReceiverLib.dll
+C:\Users\kerst\Desktop\git repos\ComicViewer\ComicReceiverLib\obj\Debug\ComicReceiverLib.pdb
