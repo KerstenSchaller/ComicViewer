@@ -1,0 +1,9 @@
+C:\Users\kerst\Desktop\git repos\AutomatedWallpaper\submodules\ComicViewer\DailyDilbertViewer\bin\Release\DailyDilbertViewer.exe.config
+C:\Users\kerst\Desktop\git repos\AutomatedWallpaper\submodules\ComicViewer\DailyDilbertViewer\obj\Release\DailyDilbertViewer.Form1.resources
+C:\Users\kerst\Desktop\git repos\AutomatedWallpaper\submodules\ComicViewer\DailyDilbertViewer\obj\Release\DailyDilbertViewer.Properties.Resources.resources
+C:\Users\kerst\Desktop\git repos\AutomatedWallpaper\submodules\ComicViewer\DailyDilbertViewer\obj\Release\DailyDilbertViewer.csproj.GenerateResource.Cache
+C:\Users\kerst\Desktop\git repos\AutomatedWallpaper\submodules\ComicViewer\DailyDilbertViewer\bin\Release\DailyDilbertViewer.exe
+C:\Users\kerst\Desktop\git repos\AutomatedWallpaper\submodules\ComicViewer\DailyDilbertViewer\bin\Release\DailyDilbertViewer.pdb
+C:\Users\kerst\Desktop\git repos\AutomatedWallpaper\submodules\ComicViewer\DailyDilbertViewer\obj\Release\DailyDilbertViewer.exe
+C:\Users\kerst\Desktop\git repos\AutomatedWallpaper\submodules\ComicViewer\DailyDilbertViewer\obj\Release\DailyDilbertViewer.pdb
+C:\Users\kerst\Desktop\git repos\AutomatedWallpaper\submodules\ComicViewer\DailyDilbertViewer\obj\Release\DailyDilbertViewer.csprojResolveAssemblyReference.cache

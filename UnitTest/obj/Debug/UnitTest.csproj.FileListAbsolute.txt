@@ -1,0 +1,6 @@
+C:\Users\kerst\Desktop\git repos\AutomatedWallpaper\submodules\ComicViewer\UnitTest\bin\Debug\UnitTest.dll
+C:\Users\kerst\Desktop\git repos\AutomatedWallpaper\submodules\ComicViewer\UnitTest\bin\Debug\UnitTest.pdb
+C:\Users\kerst\Desktop\git repos\AutomatedWallpaper\submodules\ComicViewer\UnitTest\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
+C:\Users\kerst\Desktop\git repos\AutomatedWallpaper\submodules\ComicViewer\UnitTest\bin\Debug\de\Microsoft.VisualStudio.QualityTools.UnitTestFramework.resources.dll
+C:\Users\kerst\Desktop\git repos\AutomatedWallpaper\submodules\ComicViewer\UnitTest\obj\Debug\UnitTest.dll
+C:\Users\kerst\Desktop\git repos\AutomatedWallpaper\submodules\ComicViewer\UnitTest\obj\Debug\UnitTest.pdb

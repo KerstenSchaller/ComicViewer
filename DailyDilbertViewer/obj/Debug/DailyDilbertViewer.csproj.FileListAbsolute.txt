@@ -1,0 +1,8 @@
+C:\Users\kerst\Desktop\git repos\AutomatedWallpaper\submodules\ComicViewer\DailyDilbertViewer\bin\Debug\DailyDilbertViewer.exe.config
+C:\Users\kerst\Desktop\git repos\AutomatedWallpaper\submodules\ComicViewer\DailyDilbertViewer\bin\Debug\DailyDilbertViewer.exe
+C:\Users\kerst\Desktop\git repos\AutomatedWallpaper\submodules\ComicViewer\DailyDilbertViewer\bin\Debug\DailyDilbertViewer.pdb
+C:\Users\kerst\Desktop\git repos\AutomatedWallpaper\submodules\ComicViewer\DailyDilbertViewer\obj\Debug\DailyDilbertViewer.Form1.resources
+C:\Users\kerst\Desktop\git repos\AutomatedWallpaper\submodules\ComicViewer\DailyDilbertViewer\obj\Debug\DailyDilbertViewer.Properties.Resources.resources
+C:\Users\kerst\Desktop\git repos\AutomatedWallpaper\submodules\ComicViewer\DailyDilbertViewer\obj\Debug\DailyDilbertViewer.csproj.GenerateResource.Cache
+C:\Users\kerst\Desktop\git repos\AutomatedWallpaper\submodules\ComicViewer\DailyDilbertViewer\obj\Debug\DailyDilbertViewer.exe
+C:\Users\kerst\Desktop\git repos\AutomatedWallpaper\submodules\ComicViewer\DailyDilbertViewer\obj\Debug\DailyDilbertViewer.pdb

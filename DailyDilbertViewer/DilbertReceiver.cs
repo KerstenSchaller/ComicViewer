@@ -17,15 +17,15 @@ namespace DailyDilbertViewer
         MetaFileHandler metaFileHandler;
         List<string> all_tags = new List<string>();
 
-        public DilbertReceiver()
-        {
-        }
-
         //public DilbertReceiver()
         //{
-        //    filehandler = new ImageFileHandler();
-        //    metaFileHandler = new MetaFileHandler();
         //}
+
+        public DilbertReceiver()
+        {
+            filehandler = new ImageFileHandler();
+            //metaFileHandler = new MetaFileHandler();
+        }
 
 
         public bool AcceptAllCertifications(object sender, System.Security.Cryptography.X509Certificates.X509Certificate certification, System.Security.Cryptography.X509Certificates.X509Chain chain, System.Net.Security.SslPolicyErrors sslPolicyErrors)
@@ -69,8 +69,8 @@ namespace DailyDilbertViewer
             adress += (date.Day < 10) ? "0" : "";// prepend 0 if needed
             adress += date.Day;
             this.getHtml(adress);
-            var t = getTags();
-            metaFileHandler.addTagsForDate(date,t);
+            //var t = getTags();
+            //metaFileHandler.addTagsForDate(date,t);
             return  this.getImageUrl();
         }
 

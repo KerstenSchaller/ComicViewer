@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DailyDilbertViewer", "Daily
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ComicReceiverLib", "ComicReceiverLib\ComicReceiverLib.csproj", "{568016C1-41B4-4578-AD14-238AAB7D04D2}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitTest", "UnitTest\UnitTest.csproj", "{C0A95A78-F44E-4114-911C-B50F640A84E2}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{568016C1-41B4-4578-AD14-238AAB7D04D2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{568016C1-41B4-4578-AD14-238AAB7D04D2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{568016C1-41B4-4578-AD14-238AAB7D04D2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C0A95A78-F44E-4114-911C-B50F640A84E2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C0A95A78-F44E-4114-911C-B50F640A84E2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C0A95A78-F44E-4114-911C-B50F640A84E2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C0A95A78-F44E-4114-911C-B50F640A84E2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

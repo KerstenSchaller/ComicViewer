@@ -2,3 +2,8 @@ C:\Users\kerst\Desktop\git repos\ComicViewer\ComicReceiverLib\bin\Debug\ComicRec
 C:\Users\kerst\Desktop\git repos\ComicViewer\ComicReceiverLib\bin\Debug\ComicReceiverLib.pdb
 C:\Users\kerst\Desktop\git repos\ComicViewer\ComicReceiverLib\obj\Debug\ComicReceiverLib.dll
 C:\Users\kerst\Desktop\git repos\ComicViewer\ComicReceiverLib\obj\Debug\ComicReceiverLib.pdb
+C:\Users\kerst\Desktop\git repos\AutomatedWallpaper\submodules\ComicViewer\ComicReceiverLib\bin\Debug\ComicReceiverLib.dll
+C:\Users\kerst\Desktop\git repos\AutomatedWallpaper\submodules\ComicViewer\ComicReceiverLib\bin\Debug\ComicReceiverLib.pdb
+C:\Users\kerst\Desktop\git repos\AutomatedWallpaper\submodules\ComicViewer\ComicReceiverLib\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
+C:\Users\kerst\Desktop\git repos\AutomatedWallpaper\submodules\ComicViewer\ComicReceiverLib\obj\Debug\ComicReceiverLib.dll
+C:\Users\kerst\Desktop\git repos\AutomatedWallpaper\submodules\ComicViewer\ComicReceiverLib\obj\Debug\ComicReceiverLib.pdb

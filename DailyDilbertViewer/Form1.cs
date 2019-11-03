@@ -24,7 +24,7 @@ namespace DailyDilbertViewer
 
         private void Form1_Load(object sender, EventArgs e)
         { 
-            receiver = new DilbertReceiver(this.pictureBox_dilbertComic,this.listBox_Dates, this.listBox_tags);
+            receiver = new DilbertReceiver();
             date = DateTime.Now;
             listBox_Dates.SelectedIndex = listBox_Dates.Items.Count - 1;
             setComic(date);

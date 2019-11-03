@@ -1,0 +1,4 @@
+C:\Users\kerst\Desktop\git repos\AutomatedWallpaper\submodules\ComicViewer\ComicReceiverLib\bin\Release\ComicReceiverLib.dll
+C:\Users\kerst\Desktop\git repos\AutomatedWallpaper\submodules\ComicViewer\ComicReceiverLib\obj\Release\ComicReceiverLib.dll
+C:\Users\kerst\Desktop\git repos\AutomatedWallpaper\submodules\ComicViewer\ComicReceiverLib\obj\Release\ComicReceiverLib.csprojResolveAssemblyReference.cache
+C:\Users\kerst\Desktop\git repos\AutomatedWallpaper\submodules\ComicViewer\ComicReceiverLib\bin\Release\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
