@@ -5,6 +5,7 @@ find_package(LibXml2 REQUIRED)
 
 add_executable(downloadDilbert
 	main.cpp
+	html_operations.cpp
 	)
 
 target_include_directories(downloadDilbert
