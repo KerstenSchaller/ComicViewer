@@ -131,7 +131,7 @@ namespace DailyDilbertViewer
 
         public string getImageUrl()
         {
-            string UrlStartstring = "http://assets.amuniversal";
+            string UrlStartstring = "https://assets.amuniversal";
 
             int startIndex= httpContent.IndexOf(UrlStartstring);
             int endindex   = httpContent.IndexOf("\"/>\n", startIndex);
